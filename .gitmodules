@@ -1,0 +1,4 @@
+[submodule "nft_storage"]
+	path = nft_storage
+	url = https://github.com/wei1769/nft_storage.git
+	branch = main
