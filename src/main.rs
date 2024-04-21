@@ -19,8 +19,7 @@ use solana_sdk::{
 
 mod util;
 use spl_associated_token_account::{
-    get_associated_token_address,
-    instruction::create_associated_token_account_idempotent,
+    get_associated_token_address, instruction::create_associated_token_account_idempotent,
 };
 fn main() {
     let key_pair = util::load_config_keypair();
