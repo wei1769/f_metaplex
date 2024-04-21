@@ -16,10 +16,10 @@ use solana_sdk::{
     system_program,
     transaction::Transaction,
 };
-use spl_token;
+
 mod util;
 use spl_associated_token_account::{
-    create_associated_token_account, get_associated_token_address,
+    get_associated_token_address,
     instruction::create_associated_token_account_idempotent,
 };
 fn main() {
@@ -72,7 +72,7 @@ fn main() {
         &mint_pub.to_bytes(),
     ];
     let creator = Creator {
-        address: wallet_publickey.clone(),
+        address: wallet_publickey,
         verified: true,
         share: 100,
     };
@@ -93,7 +93,7 @@ fn main() {
             symbol: "".to_string(),
             uri: "".to_string(),
             seller_fee_basis_points: 0,
-            creators: creators,
+            creators,
             collection: None,
             uses: None,
         },
