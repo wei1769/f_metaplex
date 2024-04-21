@@ -1,15 +1,15 @@
 [package]
+edition = "2021"
 name = "f_metaplex"
 version = "0.1.0"
-edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-metaplex-token-metadata = "0.0.1"
-solana-client = "1.8.6"
-solana-sdk = "1.8.6"
-spl-token = "3.2.0"
-base64 ="0.13.0"
+base64 = "0.22.0"
+mpl-token-metadata = "4.1.2"
 solana-cli-config = "1.8.6"
-spl-associated-token-account = "1.0.3"
+solana-client = "1.18.11"
+solana-sdk = "1.18.11"
+spl-associated-token-account = "3.0.2"
+spl-token = "4.0.0"
